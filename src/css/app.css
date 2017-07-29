@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'AppFont';
+	src: url('../fonts/Acme-Regular.ttf');
+	font-weight: 500;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'SignatureFont';
+	src: url('../fonts/AguafinaScript-Regular.ttf');
+	font-weight: 500;
+	font-style: italic;
+
+}
+
+.hello {
+	color: blue;
+	font-size: 18px;		
+	font-family: 'AppFont';
+	background: url('../img/wpack.png') no-repeat;
+}
+
+.signature {
+	color: black;
+	font-size: 14px;
+	font-family: 'SignatureFont';
+	margin: 10px 0px;
+}
