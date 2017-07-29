@@ -1,28 +1,17 @@
 import _ from 'lodash';
-import './css/app.css';
-import AppIcon from './img/wpack.png'
+import printMe from './print.js'; 
 
 function component() {
 	var element = document.createElement('div');
-	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-	element.classList.add('hello');
+	var button = document.createElement('button');
 
-	var appIcon = new Image();
-	appIcon.src = AppIcon;
-	
-	element.appendChild(appIcon);
+	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+	button.innerHTML = 'Click me and check the console logs';
+	button.onclick = printMe;
+
+	element.appendChild(button);
 
 	return element;
 }
-
-function signature() {
-	var signatureElement = document.createElement('div');
-	
-	signatureElement.innerHTML = _.join(['Tomasz', 'Galuszka'], ' ');
-	signatureElement.classList.add('signature');
-
-	return signatureElement;
-}
-
 document.body.appendChild(component());
-document.body.appendChild(signature());
