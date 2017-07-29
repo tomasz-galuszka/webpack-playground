@@ -10,10 +10,11 @@ npm install --save-dev style-loader css-loader
 npm install --save-dev file-loader
 npm install --save-dev html-webpack-plugin
 npm install --save-dev clean-webpack-plugin
+npm install --save-dev webpack-dev-server
 ````
 
 # Running
 ````
-npm run build
-// open browser and point to ./dist/index.html
+npm start
+// open browser and point to localhost:8081
 ````
